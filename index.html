@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Pl-p0-node.js : Tutorial de instalación de Node.JS">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pl-p0-node.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/danielquijada/pl-p0-node.js">View on GitHub</a>
+
+          <h1 id="project_title">Pl-p0-node.js</h1>
+          <h2 id="project_tagline">Tutorial de instalación de Node.JS</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/danielquijada/pl-p0-node.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/danielquijada/pl-p0-node.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="practica-0-tutorial-de-instalación-de-nodejs" class="anchor" href="#practica-0-tutorial-de-instalaci%C3%B3n-de-nodejs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Practica 0: Tutorial de Instalación de Node.JS</h1>
+
+<h2>
+<a id="instalación-en-linux" class="anchor" href="#instalaci%C3%B3n-en-linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalación en Linux</h2>
+
+<h3>
+<a id="instalación-normal" class="anchor" href="#instalaci%C3%B3n-normal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalación normal</h3>
+
+<p>En caso de que el paquete esté incluido en el repositorio de paquetes de Ubuntu, y de que no de problemas:</p>
+
+<ol>
+<li>Abrir una terminal (Ctrl + T).</li>
+<li>Introducir los siguientes comandos:</li>
+</ol>
+
+<pre><code>sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup | sudo bash
+sudo apt-get install -y nodejs
+</code></pre>
+
+<h3>
+<a id="instalación-alternativa-usando-node-version-manager-nvm" class="anchor" href="#instalaci%C3%B3n-alternativa-usando-node-version-manager-nvm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalación alternativa. Usando Node Version Manager (NVM)</h3>
+
+<p>Hay casos en los que esta instalación puede dar algunos problemas. El comando <code>apt-get install</code>dando errores, que se instale una versión no actualizada o que no se añada al PATH, entre otros. Para esos casos, existen alternativas, una de las cuales es:</p>
+
+<ol>
+<li>Abrir una consola (Ctrl + T).</li>
+<li>Introducir los siguientes comandos:</li>
+</ol>
+
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install build-essential libssl-dev
+</code></pre>
+
+<ol>
+<li>Descargar el script de instalación de nvm:</li>
+</ol>
+
+<pre><code>$ curl https://raw.githubusercontent.com/creationix/nvm/&lt;span class="highlight"&gt;v0.7.0&lt;/span&gt;/install.sh | sh
+</code></pre>
+
+<ol>
+<li>Una vez hecho esto, hay que salir y entrar de Ubuntu. De forma alternativa, mucho más rápida, recargar el archivo .profile:</li>
+</ol>
+
+<pre><code>$ source ~/.profile
+</code></pre>
+
+<ol>
+<li>Hecho esto, se puede instalar la versión que deseemos. Para ver un listado de todas las versiones:</li>
+</ol>
+
+<pre><code>$ nvm ls-remote
+</code></pre>
+
+<ol>
+<li>Elegir la versión deseada (recomendablemente la última estable) e instalarlo con el comando:</li>
+</ol>
+
+<pre><code>$ nvm install &lt;numero de version&gt;
+</code></pre>
+
+<h2>
+<a id="instalación-en-windows" class="anchor" href="#instalaci%C3%B3n-en-windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalación en Windows</h2>
+
+<p>También se puede instalar en Windows, para los que no tengan instalada ninguna distribución de Ubuntu. El proceso estándar de instalación es bastante sencillo:</p>
+
+<ol>
+<li>Se debe descargar el installer desde: <a href="http://nodejs.org/">http://nodejs.org/</a> (Downloads &gt; Elegir el adecuado para tu SO).</li>
+<li>Ejecutarlo y seguir el Wizard de instalación.</li>
+<li>Ejecutar desde el ejecutable de Node.JS, o desde la consola con el comando node.</li>
+</ol>
+
+<h2>
+<a id="utilización" class="anchor" href="#utilizaci%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Utilización</h2>
+
+<p>Tanto en Linux como en Windows, dispondrás de una consola de Node.JS; en la que podrás escribir tus funciones y expresiones:</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/2428425/5988582/61379980-a95e-11e4-9c58-a7847690b0cb.jpg" alt=""></p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/2428425/5988583/6138d2fa-a95e-11e4-9e33-f668ae69f615.jpg" alt=""></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pl-p0-node.js maintained by <a href="https://github.com/danielquijada">danielquijada</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
